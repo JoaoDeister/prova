@@ -1,0 +1,84 @@
+/* Cabeçalho */
+.header {
+  background-color: #333; /* Cor de fundo neutra e escura, proporcionando um visual sóbrio */
+  padding: 20px 0; /* Espaçamento interno vertical (20px no topo e embaixo) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para dar um efeito de profundidade */
+}
+
+/* Container central */
+.container {
+  display: flex; /* Utiliza flexbox para posicionar os itens de forma flexível */
+  align-items: center; /* Alinha verticalmente os itens no centro */
+  justify-content: space-between; /* Distribui os itens de forma espaçada entre as extremidades do container */
+  max-width: 1100px; /* Limita a largura máxima do container */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+  padding: 0 1rem; /* Adiciona um espaçamento lateral interno (1rem de cada lado) */
+}
+
+/* Logo */
+.logo h1 {
+  font-family: 'Arial', sans-serif; /* Define a fonte como Arial, uma fonte sans-serif */
+  font-size: 2.5rem; /* Define o tamanho da fonte do logo */
+  color: #f1f1f1; /* Cor clara para o texto do logo */
+  cursor: pointer; /* Torna o texto clicável, como um botão */
+  letter-spacing: 1px; /* Espaçamento entre as letras para dar um visual mais estilizado */
+}
+
+/* Seção de Botões */
+.btnNewPost {
+  display: flex; /* Utiliza flexbox para alinhar os botões */
+  align-items: center; /* Alinha verticalmente os botões no centro */
+}
+
+/* Estilo comum para os botões (Voltar e Novo Post) */
+button {
+  font-size: 1.1rem; /* Define o tamanho da fonte do botão */
+  font-family: 'Heebo', sans-serif; /* Define a fonte do botão */
+  font-weight: 700; /* Deixa a fonte do botão mais grossa */
+  color: #fff; /* Define a cor do texto dos botões como branco */
+  padding: 12px 25px; /* Define o espaçamento interno dos botões */
+  border: none; /* Remove a borda do botão */
+  border-radius: 50px; /* Deixa os botões com bordas arredondadas */
+  cursor: pointer; /* Torna os botões clicáveis */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Animações para transições suaves ao interagir com o botão */
+}
+
+/* Botão Voltar */
+.backButton {
+  background-color: #6c757d; /* Cor neutra para o botão "Voltar" */
+}
+
+.backButton:hover {
+  background-color: #5a6368; /* Cor mais escura quando o botão é hover */
+  transform: scale(1.05); /* Aumenta ligeiramente o botão ao passar o mouse sobre ele */
+  box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3); /* Aplica uma sombra suave no hover */
+}
+
+/* Botão de Novo Post */
+.newPostButton {
+  background-color: #ff5e57; /* Cor vibrante para o botão "Novo Post" */
+}
+
+.newPostButton:hover {
+  background-color: #ff3e32; /* Cor mais forte quando o botão é hover */
+  transform: scale(1.05); /* Aumenta ligeiramente o botão ao passar o mouse sobre ele */
+  box-shadow: 0 4px 12px rgba(255, 94, 87, 0.3); /* Aplica uma sombra suave no hover */
+}
+
+/* Foco nos Botões */
+button:focus {
+  outline: none; /* Remove o contorno padrão do botão ao focar */
+  box-shadow: 0 0 0 3px rgb(255, 255, 255); /* Aplica uma sombra personalizada ao focar no botão */
+}
+
+/* Seção Esquerda */
+.leftSection {
+  display: flex; /* Utiliza flexbox para organizar os itens na seção */
+  justify-content: flex-start; /* Alinha os itens ao lado esquerdo */
+}
+
+/* Seção Direita */
+.rightSection {
+  display: flex; /* Utiliza flexbox para organizar os itens na seção */
+  justify-content: flex-end; /* Alinha os itens ao lado direito */
+}

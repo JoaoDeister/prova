@@ -1,0 +1,143 @@
+/* Estilo para a descrição do post (previewText) */
+.previewText {
+  max-height: 4.5rem; /* Limita a altura da descrição para texto resumido (evita que o texto ultrapasse um certo limite) */
+  overflow-y: auto; /* Barra de rolagem vertical quando o conteúdo ultrapassar a altura definida */
+  overflow-x: hidden; /* Remove a rolagem horizontal, garantindo que o conteúdo não transborde para a lateral */
+  white-space: normal; /* Permite que o texto quebre em várias linhas (impede que o texto fique em uma única linha longa) */
+  padding-right: 10px; /* Adiciona um pouco de espaço à direita para a barra de rolagem não sobrepor o texto */
+  margin-bottom: 10px; /* Adiciona um pequeno espaço após a descrição, separando da próxima seção */
+}
+
+/* Ajustes no conteúdo expandido (additionalContent) */
+.additionalContent {
+  max-height: 200px; /* Limita a altura do conteúdo expandido para garantir que o conteúdo não ocupe toda a tela */
+  overflow-y: auto; /* Barra de rolagem vertical quando o conteúdo ultrapassar a altura definida */
+  overflow-x: hidden; /* Remove a rolagem horizontal, garantindo que o conteúdo não ultrapasse os limites horizontais */
+  white-space: normal; /* Permite que o texto quebre em várias linhas, mantendo a legibilidade */
+  font-size: 1.1rem; /* Ajusta o tamanho da fonte para uma leitura confortável */
+  line-height: 1.5rem; /* Define o espaçamento entre as linhas do texto para melhorar a legibilidade */
+  color: #e5e7eb; /* Define a cor do texto como cinza claro, proporcionando um bom contraste com o fundo escuro */
+  padding-right: 10px; /* Garante que a barra de rolagem não sobreponha o texto */
+  margin-top: 10px; /* Adiciona um pequeno espaço acima do conteúdo expandido para separá-lo visualmente do conteúdo anterior */
+}
+
+/* Personalizando a barra de rolagem vertical */
+.previewText::-webkit-scrollbar,
+.additionalContent::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem vertical (deixa a barra mais estreita) */
+}
+
+/* Personalizando a parte rolável da barra de rolagem (thumb) */
+.previewText::-webkit-scrollbar-thumb,
+.additionalContent::-webkit-scrollbar-thumb {
+  background: #6b7280; /* Cor da parte rolável da barra de rolagem */
+  border-radius: 4px; /* Torna as bordas da barra de rolagem mais suaves */
+}
+
+/* Cor da barra de rolagem quando o usuário passa o mouse (hover) */
+.previewText::-webkit-scrollbar-thumb:hover,
+.additionalContent::-webkit-scrollbar-thumb:hover {
+  background: #4b5563; /* Cor mais escura da barra de rolagem quando o mouse está sobre ela */
+}
+
+/* Outras regras do layout */
+
+/* Estilos para o cartão que exibe o post */
+.card {
+  margin: 0 auto; /* Centraliza o cartão horizontalmente na página */
+  background-color: #2b313e; /* Cor de fundo escura do cartão */
+  padding: 30px 40px; /* Espaçamento interno do cartão */
+  width: 600px; /* Largura fixa para o cartão */
+  border-radius: 10px; /* Cantos arredondados para um visual mais suave */
+  margin-top: 40px; /* Espaço superior entre os cartões */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o cartão */
+}
+
+/* Estilo para o cabeçalho do cartão */
+.cards .card header {
+  display: flex; /* Organiza os itens dentro do cabeçalho em linha */
+  justify-content: space-between; /* Coloca os itens (como título e ações) com o máximo de espaço entre eles */
+  margin-bottom: 15px; /* Espaço abaixo do cabeçalho */
+}
+
+/* Estilo para o título do cartão */
+.card header h2 {
+  font-family: "Noto Sans", sans-serif; /* Tipo de fonte para o título */
+  font-weight: 700; /* Título com peso de fonte mais forte */
+  color: #ffffff; /* Cor do título em branco */
+  font-size: 1.7rem; /* Tamanho do título */
+}
+
+/* Linha de separação entre título e conteúdo */
+.line {
+  background-color: #3e445b; /* Cor de fundo da linha */
+  height: 2px; /* Espessura da linha */
+}
+
+/* Estilos para o parágrafo de texto dentro do cartão */
+p {
+  margin-top: 20px; /* Espaço acima do parágrafo */
+  font-size: 1.2rem; /* Tamanho do texto do parágrafo */
+  font-family: "Noto Sans", sans-serif; /* Tipo de fonte do parágrafo */
+  font-weight: 500; /* Peso médio para o texto */
+  color: #d1d5db; /* Cor mais clara para o texto, criando contraste com o fundo */
+}
+
+/* Estilo do container de botões */
+.btns {
+  display: flex; /* Organiza os botões em uma linha */
+  justify-content: flex-start; /* Alinha os botões à esquerda */
+  gap: 10px; /* Espaço entre os botões */
+  margin-top: 20px; /* Espaço superior dos botões */
+}
+
+/* Estilos para os botões de ação */
+.btns button {
+  font-family: "Heebo", sans-serif; /* Tipo de fonte para os botões */
+  font-weight: 700; /* Peso de fonte forte para os botões */
+  font-size: 1rem; /* Tamanho de fonte dos botões */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border: none; /* Remove borda padrão do botão */
+  border-radius: 8px; /* Bordas arredondadas para um visual mais moderno */
+  cursor: pointer; /* Cursor de ponteiro para indicar que o botão é clicável */
+}
+
+/* Estilo específico para o botão de editar */
+.btnEdit button {
+  background-color: #4f46e5; /* Cor de fundo azul do botão de editar */
+  color: #ffffff; /* Cor do texto do botão em branco */
+}
+
+.btnEdit button:hover {
+  background-color: #4338ca; /* Cor mais escura do botão de editar ao passar o mouse */
+}
+
+/* Estilo específico para o botão de "Leia mais" */
+.btnReadMore {
+  background-color: #5ff54b; /* Cor de fundo verde do botão de "Leia mais" */
+  color: #ffffff; /* Cor do texto do botão em branco */
+}
+
+.btnReadMore:hover {
+  background-color: #36e61f; /* Cor mais escura do botão de "Leia mais" ao passar o mouse */
+}
+
+/* Estilo específico para o botão de deletar */
+.btnDelete button {
+  background-color: #ef4444; /* Cor de fundo vermelha para o botão de deletar */
+  color: #ffffff; /* Cor do texto do botão em branco */
+}
+
+.btnDelete button:hover {
+  background-color: #dc2626; /* Cor mais escura do botão de deletar ao passar o mouse */
+}
+
+/* Estilo de carregamento (loading) */
+.loading {
+  height: 100vh; /* Altura total da tela */
+  display: flex; /* Flexbox para centralizar o conteúdo */
+  align-items: center; /* Alinha verticalmente o conteúdo */
+  justify-content: center; /* Alinha horizontalmente o conteúdo */
+  font-size: 1.5rem; /* Tamanho da fonte para o texto de carregamento */
+  color: #d1d5db; /* Cor de texto mais clara para o carregamento */
+}

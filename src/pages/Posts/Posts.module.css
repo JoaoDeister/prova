@@ -1,0 +1,119 @@
+/* Resetando alguns estilos para garantir consistência */
+* {
+  margin: 0; /* Remove margens externas */
+  padding: 0; /* Remove preenchimento interno */
+  box-sizing: border-box; /* Garante que o padding e a borda não afetem o tamanho total dos elementos */
+}
+
+main {
+  display: flex; /* Usando flexbox para layout */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  padding: 3rem 0; /* Adiciona preenchimento superior e inferior */
+}
+
+.cardPost {
+  background-color: #2f3644; /* Define a cor de fundo do cartão de postagem */
+  padding: 30px 70px; /* Adiciona preenchimento dentro do cartão */
+  border-radius: 15px; /* Arredonda os cantos do cartão */
+  max-width: 800px; /* Limita a largura máxima do cartão */
+  width: 100%; /* Faz o cartão ocupar toda a largura disponível até o limite máximo */
+}
+
+.cardPost h1 {
+  font-family: 'Heebo', sans-serif; /* Define a fonte do título */
+  font-weight: 400; /* Define a espessura da fonte */
+  text-align: center; /* Centraliza o texto do título */
+  color: #d2daf5; /* Define a cor do texto como um tom claro de azul */
+  font-size: 3rem; /* Define o tamanho da fonte */
+  margin-bottom: 5px; /* Adiciona espaço abaixo do título */
+}
+
+.linePost {
+  height: 2px; /* Define a altura da linha */
+  background-color: #3e445b; /* Define a cor da linha */
+  margin-bottom: 20px; /* Adiciona espaço abaixo da linha */
+}
+
+.cardBodyPost {
+  margin-top: 25px; /* Adiciona espaço no topo do corpo do cartão */
+}
+
+.fields {
+  margin-bottom: 20px; /* Adiciona espaço abaixo de cada campo de entrada */
+}
+
+label {
+  display: block; /* Exibe o rótulo como um bloco */
+  margin-bottom: 7px; /* Adiciona espaço abaixo do rótulo */
+  font-size: 1.2rem; /* Define o tamanho da fonte do rótulo */
+  color: #ffffff; /* Define a cor do texto como branco */
+  font-family: 'Poppins', sans-serif; /* Define a fonte do rótulo */
+}
+
+input,
+textarea {
+  width: 100%; /* Garante que os campos ocupem toda a largura disponível */
+  border-radius: 10px; /* Arredonda os cantos dos campos */
+  border: 1px solid #ccc; /* Adiciona uma borda sutil aos campos */
+  outline: none; /* Remove o contorno padrão do campo ao focar */
+  font-size: 1.2rem; /* Define o tamanho da fonte nos campos */
+  padding-left: 15px; /* Adiciona preenchimento à esquerda dos campos */
+  background-color: #3e445b; /* Define um fundo suave para os campos */
+  color: #fff; /* Define a cor do texto como branco */
+}
+
+input {
+  height: 45px; /* Define a altura dos campos de entrada (input) */
+}
+
+textarea {
+  height: 190px; /* Define a altura das caixas de texto (textarea) */
+  resize: none; /* Desabilita a opção de redimensionar a caixa de texto */
+  padding-top: 10px; /* Adiciona preenchimento superior à caixa de texto */
+}
+
+.btnPost {
+  margin-top: 30px; /* Adiciona espaço acima do botão */
+  text-align: center; /* Centraliza o botão */
+}
+
+.btnPost button {
+  font-family: 'Heebo', sans-serif; /* Define a fonte do botão */
+  font-weight: 800; /* Define a espessura da fonte do botão */
+  font-size: 1.3rem; /* Define o tamanho da fonte do botão */
+  padding: 5px 50px; /* Define o preenchimento dentro do botão */
+  color: #fff; /* Define a cor do texto no botão como branco */
+  background-color: #02d802; /* Define a cor de fundo do botão */
+  border: 0; /* Remove a borda do botão */
+  border-radius: 10px; /* Arredonda os cantos do botão */
+  cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+  transition: background-color 0.3s ease; /* Adiciona um efeito suave na mudança de cor do botão */
+}
+
+.errorMessage {
+  color: rgb(255, 0, 0); /* Define a cor da mensagem de erro como vermelha */
+  font-size: 1rem; /* Define o tamanho da mensagem de erro */
+  margin-top: 10px; /* Adiciona espaço acima da mensagem */
+  text-align: center; /* Centraliza a mensagem de erro */
+}
+
+/* Melhorando a responsividade */
+@media (max-width: 768px) {
+  .cardPost {
+    padding: 20px 30px; /* Reduz o preenchimento do cartão em telas menores */
+  }
+
+  .cardPost h1 {
+    font-size: 2rem; /* Reduz o tamanho do título em telas menores */
+  }
+
+  input,
+  textarea {
+    font-size: 1rem; /* Reduz o tamanho da fonte nos campos em telas menores */
+  }
+
+  .btnPost button {
+    font-size: 1.1rem; /* Reduz o tamanho da fonte do botão em telas menores */
+    padding: 5px 30px; /* Ajusta o preenchimento do botão em telas menores */
+  }
+}
